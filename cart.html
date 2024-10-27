@@ -10,7 +10,7 @@
             margin: 0;
             font-family: 'Inter', sans-serif;
             color: white;
-            background-color: #e3f2e6; /* Light green background */
+            background-color: #e3f2e6; 
         }
         header {
             display: flex;
@@ -64,23 +64,23 @@
             font-weight: 600;
         }
         .cart-container {
-            display: flex; /* Use flexbox to position items */
+            display: flex; 
             padding: 20px;
-            background-color: #b2d8b2; /* Lighter green for the cart section */
-            color: #004507; /* Dark green text */
+            background-color: #b2d8b2; 
+            color: #004507; 
         }
         .cart-items {
-            flex: 1; /* Allow cart items to take up available space */
+            flex: 1; 
             text-align: center;
         }
         .order-summary {
-            margin-left: 20px; /* Space between cart and order summary */
-            background: #fff; /* White background for order summary */
-            color: #000; /* Black text */
+            margin-left: 20px; 
+            background: #fff; 
+            color: #000; 
             padding: 20px;
             border-radius: 10px;
-            width: 300px; /* Fixed width for order summary */
-            display: none; /* Hidden by default */
+            width: 300px; 
+            display: none;
         }
         .cart-item {
             background: rgba(210, 222, 209, 0.8);
@@ -90,7 +90,7 @@
             text-align: center;
         }
         .button {
-            background-color: #004507; /* Dark green */
+            background-color: #004507; 
             width: 50%;
             height: 47px;
             border: solid #ffffff 1px;
@@ -116,12 +116,12 @@
             margin-top: 20px;
         }
         .form-group div {
-            display: flex; /* or use inline-block */
-            gap: 10px; /* Optional: space between the checkboxes */
+            display: flex; 
+            gap: 10px; 
         }   
 
         .form-group input {
-            width: calc(100% - 22px); /* Full width minus padding/border */
+            width: calc(100% - 22px); 
             padding: 8px;
             border-radius: 6px;
             border: 1px solid #000;
@@ -231,7 +231,7 @@
         });
 
         totalPriceDiv.innerHTML = `Total Price: P ${totalPrice.toFixed(2)}`;
-        document.getElementById('foodcart').value = JSON.stringify(cartItems); // Store cart items
+        document.getElementById('foodcart').value = JSON.stringify(cartItems); 
     }
 
     function removeFromCart(index) {
@@ -242,11 +242,10 @@
     }
 
     function showCheckout() {
-        displayCart(); // Ensure cart is displayed and updated
-        document.getElementById('order-summary').style.display = 'block'; // Show order summary
+        displayCart(); 
+        document.getElementById('order-summary').style.display = 'block'; 
     }
 
-    // Display cart items on page load
     displayCart();
 </script>
 
